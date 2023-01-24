@@ -18,6 +18,7 @@ export class FrappeAuth {
       Accept: 'application/json',
       'Content-Type': 'application/json; charset=utf-8',
       'X-Frappe-Site-Name': window.location.hostname,
+      'Authorization': `token ${process.env.REACT_APP_PUBKEY}:${process.env.REACT_APP_SECKEY}` 
     };
 
     if ((window as any).csrf_token && (window as any).csrf_token !== '{{ csrf_token }}') {
@@ -54,6 +55,7 @@ export class FrappeAuth {
       Accept: 'application/json',
       'Content-Type': 'application/json; charset=utf-8',
       'X-Frappe-Site-Name': window.location.hostname,
+      'Authorization': `token ${process.env.REACT_APP_PUBKEY}:${process.env.REACT_APP_SECKEY}` 
     };
 
     if ((window as any).csrf_token && (window as any).csrf_token !== '{{ csrf_token }}') {
@@ -82,6 +84,7 @@ export class FrappeAuth {
       Accept: 'application/json',
       'Content-Type': 'application/json; charset=utf-8',
       'X-Frappe-Site-Name': window.location.hostname,
+      'Authorization': `token ${process.env.REACT_APP_PUBKEY}:${process.env.REACT_APP_SECKEY}` 
     };
 
     if ((window as any).csrf_token && (window as any).csrf_token !== '{{ csrf_token }}') {
@@ -116,6 +119,7 @@ export class FrappeAuth {
       Accept: 'application/json',
       'Content-Type': 'application/json; charset=utf-8',
       'X-Frappe-Site-Name': window.location.hostname,
+      'Authorization': `token ${process.env.REACT_APP_PUBKEY}:${process.env.REACT_APP_SECKEY}` 
     };
 
     if ((window as any).csrf_token && (window as any).csrf_token !== '{{ csrf_token }}') {
